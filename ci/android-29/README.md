@@ -1,4 +1,4 @@
-# Android SDK with Gradle
+# Android SDK CI
 
 ## Included
 * OpenJDK 8
@@ -11,11 +11,11 @@
 ## Build image
 
 ```bash
-docker build -t izapelini/android-sdk-gradle-ci .
+docker build -t izapelini/android-sdk-ci .
 ```
 
 ## Run docker
 
 ```bash
-docker run --rm -it izapelini/android-sdk-gradle-ci bash
+docker run --rm -it izapelini/android-sdk-ci bash
 ```
