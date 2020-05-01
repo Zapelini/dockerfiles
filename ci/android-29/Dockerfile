@@ -3,7 +3,7 @@ FROM alvrme/alpine-android:android-29
 ENV SDK_HOME /opt
 
 # Gradle
-ENV GRADLE_VERSION 5.4.1
+ENV GRADLE_VERSION 5.6.4
 ENV GRADLE_SDK_URL https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip
 
 RUN wget "${GRADLE_SDK_URL}" -O gradle-${GRADLE_VERSION}-all.zip \
