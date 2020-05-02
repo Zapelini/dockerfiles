@@ -1,5 +1,7 @@
 FROM alvrme/alpine-android:android-29
 
+LABEL maintainer "ivanilsonz@gmail.com"
+
 ENV SDK_HOME /opt
 
 # Gradle

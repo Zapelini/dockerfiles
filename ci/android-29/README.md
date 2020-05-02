@@ -1,5 +1,9 @@
 # Android SDK CI
 
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-info-blue.svg)](https://hub.docker.com/r/izapelini/android-sdk-ci)
+[![Docker Pulls](https://img.shields.io/docker/pulls/izapelini/android-sdk-ci.svg)](https://hub.docker.com/r/izapelini/android-sdk-ci/)
+[![Image Size & Layers](https://images.microbadger.com/badges/image/izapelini/android-sdk-ci.svg)](https://microbadger.com/images/izapelini/android-sdk-ci)
+
 ## Included
 * OpenJDK 8
 * Gradle 5.4.1
