@@ -30,19 +30,22 @@ All flower options should be prefixed with FLOWER_.
 ## Run docker-compose
 
 ```bash
-rabbitmq:
-    image: dockerfile/rabbitmq:management-alpine
-    expose:
-        - "5672"
-        - "15672"
-    ports:
-        - "15672:15672"
+services:
+  rabbitmq:
+      image: rabbitmq:management-alpine
+      expose:
+          - "5672"
+          - "15672"
+      ports:
+          - "15672:15672"
 
-flower:
-    image: izapelin/flower
-    environment:
-        - BROKER=amqp://rabbitmq:5672//
-        - BROKER_API=http://guest:guest@rabbitmq:15672/api/
-    links:
-        - rabbitmq
+  flower:
+      image: izapelini/flower
+      environment:
+          - BROKER=amqp://rabbitmq:5672//
+          - BROKER_API=http://guest:guest@rabbitmq:15672/api/
+      links:
+          - rabbitmq
+      ports:
+          - "5555:5555"
 ```
