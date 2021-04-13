@@ -5,7 +5,7 @@ LABEL maintainer "ivanilsonz@gmail.com"
 ENV SDK_HOME /opt
 
 # Gradle
-ENV GRADLE_VERSION 5.6.4
+ENV GRADLE_VERSION 6.8.3
 ENV GRADLE_SDK_URL https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip
 
 RUN apk add openssh git \
